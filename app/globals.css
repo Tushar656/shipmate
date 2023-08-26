@@ -6,13 +6,17 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --theme2: #9747ff;
+  --theme1: #7c61ff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 248, 249, 253;
+    --background-end-rgb: 230, 231, 242;
+    --theme2: #9747ff;
+    --theme1: #7c61ff;
   }
 }
 
@@ -24,4 +28,20 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    min-height: 100vh;
+}
+.gradient{
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      var(--theme1)
+    )
+    var(--theme2);
+}
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
 }
