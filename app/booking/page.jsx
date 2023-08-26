@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Steps from './Steps'
 import BookingSummary from './BookingSummary'

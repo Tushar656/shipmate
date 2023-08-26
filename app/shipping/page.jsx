@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Search from '../components/Search'
 import Navbar from '../components/Navbar'
@@ -9,11 +11,10 @@ import { useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation'
 
 const page = () => {
-    // const user = useSelector((state) => state.auth.user);
+    const user = useSelector((state) => state.auth.user);
     // const router = useRouter();
-    // if(!user || !user.origin || user.destination || user?.date || user?.weight){
+    // if(!user || !user.origin || !user.destination || !user?.date || !user?.weight){
     //     router.push('/');
-    //     return;
     // }
   return (
     <div>
