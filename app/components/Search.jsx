@@ -26,7 +26,7 @@ const Search = ({load}) => {
     const user = useSelector((state) => state.auth.user);
 
     return (
-        <div className={`w-full flex flex-col justify-center items-center ${load ? 'h-28' : 'h-36'} px-24`}>
+        <div className={`w-full flex flex-col justify-center items-center ${load ? 'h-28' : 'h-36 mb-4'} px-24`}>
             <div className='h-14 bg-white shadow-md w-full rounded-lg flex justify-center items-center'>
                 <div className='h-7 px-2 flex-grow p-2 flex items-center'>
                     <CiLocationOn

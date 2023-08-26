@@ -59,7 +59,8 @@ const Checkout = () => {
                 <div className='text-black flex items-center justify-center'>
                     <button
                         onClick={() => {
-                            toast.success('Payment Successful')
+                            toast.success('Payment Successful');
+                            router.push('/')
                         }}
                         // disabled={disabled}
                         className={`

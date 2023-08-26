@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation'
 
 const page = () => {
-    // const user = useSelector((state) => state.auth.user);
+    const user = useSelector((state) => state.auth.user);
     // const router = useRouter();
     // if(!user || !user.origin || user.destination || user?.date || user?.weight){
     //     router.push('/');

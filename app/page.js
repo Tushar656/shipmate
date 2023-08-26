@@ -19,7 +19,7 @@ export default function Home() {
       <HomeHead />
       <Search />
       <Services />
-      {/* <Wave/> */}
+      <Wave/>
     </div>
   )
 }
